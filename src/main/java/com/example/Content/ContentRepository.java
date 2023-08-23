@@ -36,6 +36,12 @@ public class ContentRepository {
     }
 
     public void save(ContentModel content){
+        contentList.removeIf(c->c.id().equals(content.id()));
+        
        contentList.add(content);
+    }
+
+    public void delete(Integer id){
+        contentList.removeIf(c->c.id().equals(id));
     }
 }

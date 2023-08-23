@@ -1,9 +1,9 @@
-
+###Get by id
 GET http://localhost:8080/home/1
-
+###Get all content
 GET http://localhost:8080/home
 
-### Create new Content
+###Create new Content
 POST http://localhost:8080/home
 Content-Type: application/json
 {
@@ -16,3 +16,20 @@ Content-Type: application/json
     "url":"com.con"
     }
 }
+
+### Update new Content
+PUT  http://localhost:8080/2
+Content-Type: application/json
+{
+    {
+    "id":2,
+    "title":"title2",
+    "desc":"blah blah blah2",
+    "status":"IN_PROGRESS",
+    "contentType":"AUDIO",
+    "url":"com.con"
+    }
+}
+
+### Create new Content
+DELETE  http://localhost:8080/home/2
