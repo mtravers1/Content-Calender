@@ -1,0 +1,18 @@
+
+GET http://localhost:8080/home/1
+
+GET http://localhost:8080/home
+
+### Create new Content
+POST http://localhost:8080/home
+Content-Type: application/json
+{
+    {
+    "id":2,
+    "title":"title2",
+    "desc":"blah blah blah2",
+    "status":"IN_PROGRESS",
+    "contentType":"AUDIO",
+    "url":"com.con"
+    }
+}
